@@ -1,0 +1,205 @@
+.bodyCntr{
+    background-color: #cccccc; 
+}
+
+.padding{
+    padding-top: 20px; 
+    padding-right: 20px; 
+    padding-bottom: 20px; 
+    padding-left: 20px; 
+}
+
+@media screen and (max-width: 500px) {
+    .padding{
+        padding: 5px;
+    }
+}
+/* Header */
+header {
+    background-color: #809bc4;
+    color: white;
+    padding: 1rem;
+}
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: blue;
+    text-align: center;
+    transition:background0.3s, color 0.3s;
+}
+
+
+.main{
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.nav{
+    background-color: #33bbc5;
+    color: #ffffff;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-direction: column;
+    min-width: 60px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .nav{
+        display: none
+    };
+}
+.h1Heading{
+    text-align: center;
+}
+/* size for the icon */
+.icon{
+    height: 50px;
+    width: 50px;
+}
+/*the profile or the image size*/
+.profile-img{
+    height: 180px;
+    width:180px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+.profile-img img{
+    width: 100%;
+}
+/* Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Contact Form */
+form ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+/*Dark theme*/
+body.dark-theme{
+    background-color: black;
+    color: white;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: black;/*dack background*/
+    color: white;/*light text color*/
+}
+.dark-theme.header{
+background-color: #222;/*dark background*/
+color: white;/*ensure the text is white*/
+}
+.dark-mode button {
+    background-color: white;
+    color: black;
+}
+.dark-theme section{
+    background-color:#333/*darker section*/
+}
+
+.dark-mode button {
+    background-color:#555;
+    color: black;
+}
+
+.dark-mode button:hover{
+    background: color #777;
+}
+
+h1.dark.dark-mode,h2.dark-mode{
+    color:#333;
+}
+
+section h2.dark-mode{
+    background: color #222;
+    color: #121212;;
+}
+
+.dark-mode input, .dark-mode textarea {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Mobile Navigation */
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: #222222;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: inline;
+    }
+
+    .show-menu {
+        display: flex !important;
+    }
+
+    /* Contact Form Responsive Adjustments */
+    form ul {
+        max-width: 90%;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
